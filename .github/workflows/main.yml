@@ -68,7 +68,7 @@ jobs:
             -p 5003:8765 \
             ${{ env.IMAGE }}:latest
       - name: Migrate
-        run: docker exec fastapi-tdd aerich migrate
+        run: docker exec fastapi-tdd aerich init
       - name: Pytest
         run: docker exec fastapi-tdd python -m pytest .
       - name: Flake8
