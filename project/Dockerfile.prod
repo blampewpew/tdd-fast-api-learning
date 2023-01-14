@@ -40,4 +40,4 @@ RUN chown -R app:app $APP_HOME
 USER app
 
 # run gunicorn
-CMD ["bootstrap.sh"]
+CMD ["/bin/sh", "bootstrap.sh"]
