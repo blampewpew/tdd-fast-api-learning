@@ -2,4 +2,4 @@
 
 echo "Running migrations..."
 
-exec "aerich upgrade"
+aerich upgrade
