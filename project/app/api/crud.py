@@ -29,4 +29,3 @@ async def delete(id: int) -> int:
     summary = await TextSummary.filter(id=id).first().delete()
 
     return summary
-
